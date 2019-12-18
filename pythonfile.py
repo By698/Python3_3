@@ -14,3 +14,9 @@ def dominant(data):
     print('Liczebność:', _[1][0])
     print('Częstość:', _[1][0] / len(data))
 
+
+def correlation_matrix(data):
+    print(np.corrcoef(data))
+
+
+correlation_matrix(values.T)
