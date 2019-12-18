@@ -11,14 +11,11 @@ def dane_ilosciowe(dana, name):
     avg = np.average(dana)
     std = np.std(sepal_length)
     median = np.median(dana)
-    min = np.minimum(dana)
-    max = np.maximum(dana)
+    min = np.amin(dana)
+    max = np.amax(dana)
 
     print('Średnia arytmetyczna', name, ' to:', avg)
     print('Odchylenie standardowe', name, ' to:', std)
     print('Mediana', name, ' to:', median)
     print('Najmniejsza wartosc', name, ' to:', min)
     print('Najwieksza wartosc', name, ' to:', max)
-
-
-dane_ilosciowe(sepal_length, 'sepal_length')
