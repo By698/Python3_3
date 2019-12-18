@@ -21,4 +21,4 @@ def dane_ilosciowe(dana, name):
     print('Najwieksza wartosc', name, ' to:', max)
 
 
-dane_ilosciowe(sepal_length, 'sepal_length')v
+dane_ilosciowe(sepal_length, 'sepal_length')
