@@ -15,28 +15,9 @@ iris_class = labels.T
 
 def srednia_arytmetyczna(dana):
     avg = np.average(dana)
-
-    return avg
-
-
-def odchylenie_standardowe(dana):
     std = np.std(sepal_length)
-
-    return std
-
-def mediana(dana):
     median = np.median(dana)
-
-    return median
-
-
-def minimum(dana):
     min = np.minimum(dana)
-
-    return min
-
-
-def maximum(dana):
     max = np.maximum(dana)
 
-    return max
+    print()
