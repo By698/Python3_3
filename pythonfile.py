@@ -35,8 +35,10 @@ def dane_ilosciowe(dana, name):
 def correlation_matrix(data):
     print(np.corrcoef(data))
 
+def linear_regression(dana1,dana2,name1,name2):
 
-def linear_regression(dana1,dana2):
+
+
     x = dana1.reshape(-1, 1)
     y = dana2
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=0)
@@ -49,6 +51,10 @@ def linear_regression(dana1,dana2):
 
     plt.scatter(x_test, y_test, color='black')
     plt.plot(x_test, y_pred, color='blue', linewidth=3)
+
+    plt.xlabel(name1)
+    plt.ylabel(name2)
+    plt.title('Wykres krzywej regresji')
     plt.show()
 
 
@@ -68,6 +74,7 @@ def mapa_cieplna(x, y):
     hist = ax.hist2d(x, y)
     plt.show()
 
+dane_ilosciowe(sepal_length, 'sepal_length')
 
 # correlation_matrix(values.T)
 # histograms(petal_width, petal_length, 'petal_width', 'petal_length')
