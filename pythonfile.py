@@ -35,7 +35,7 @@ def dane_ilosciowe(dana, name):
 def correlation_matrix(data):
     print(np.corrcoef(data))
 
-def linear_regression(dana1,dana2):
+def linear_regression(dana1,dana2,name1,name2):
 
 
     X = dana1.reshape(-1, 1)
@@ -50,6 +50,10 @@ def linear_regression(dana1,dana2):
 
     plt.scatter(X_test, y_test, color='black')
     plt.plot(X_test, y_pred, color='blue', linewidth=3)
+    plt.xlabel(name1)
+    plt.ylabel(name2)
+    plt.title('Wykres krzywej regresji')
+
     plt.show()
 
 
@@ -57,4 +61,4 @@ correlation_matrix(values.T)
 
 dane_ilosciowe(sepal_length, 'sepal_length')
 
-linear_regression(petal_length,petal_width)
+linear_regression(petal_length,petal_width,'petal_length','petal_width')
