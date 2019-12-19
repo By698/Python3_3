@@ -35,9 +35,8 @@ def dane_ilosciowe(dana, name):
 def correlation_matrix(data):
     print(np.corrcoef(data))
 
+
 def linear_regression(dana1,dana2,name1,name2):
-
-
 
     x = dana1.reshape(-1, 1)
     y = dana2
@@ -73,8 +72,6 @@ def mapa_cieplna(x, y):
     fig, ax = plt.subplots(tight_layout=True)
     hist = ax.hist2d(x, y)
     plt.show()
-
-dane_ilosciowe(sepal_length, 'sepal_length')
 
 # correlation_matrix(values.T)
 # histograms(petal_width, petal_length, 'petal_width', 'petal_length')
